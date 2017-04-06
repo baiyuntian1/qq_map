@@ -2,6 +2,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1.0,user-scalable=no" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <style>
     *{
         padding:0;
@@ -26,12 +28,12 @@
     </style>
 </head>
 <body>
-    <input id="keyword" type="textbox" value="酒店">
+    <input id="keyword" type="textbox" value="廊坊">
     <input type="button" class="button" value="搜索">
     <div id="qq_map"></div>
     <div id="qq_map_1"></div>
 </body>
-<script type="text/javascript" src="/jq/jquery.min.js"></script>
+<script type="text/javascript" src="/inc/zepto.min.js"></script>
 <script type="text/javascript" src="http://map.qq.com/api/js?v=2.exp&key=d84d6d83e0e51e481e50454ccbe8986b&libraries=geometry"></script>
 <script type="text/javascript" src="https://3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js"></script>
 <script type="text/javascript" src="/jq/qq_map.js"></script>
@@ -68,25 +70,8 @@
         })
         
 
-        /*console.log(map1.CreateUrl([{
-            coord:'39.96554,116.26719',
-            title:'成都',
-            addr:'北京市海淀区复兴路32号院'
-        },
-        {
-            coord:'39.87803,116.19025',
-            title:'成都园',
-            addr:'北京市丰台区射击场路15号北京园博园'
-        }]))*/
-        
-        /*console.log(map1.CreateSearchUrl({
-            keyword : '酒店',
-            center : '39.908491,116.374328',
-            radius : '1000'
-        }))*/
-
-        /*map1.CreatePositionUrl([{
-            address: '北京天安门',
+        map1.CreatePositionUrl([{
+            address: '九点',
             title:'成都',
             addr:'北京市海淀区复兴路32号院'
         },
@@ -104,9 +89,9 @@
             address:'北京香山',
             title:'成都园',
             addr:'北京市丰台区射'
-        }])*/
+        }])
 
-        //map1.CreateSearchUrl_2()
+        //map1.CreateSearchUrl()
 
 
         /*$('#qq_map_1').click(function(){
