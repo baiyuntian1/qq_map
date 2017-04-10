@@ -4,13 +4,13 @@
 ### 安装：
 
 ## 文件结构
---
+
 
     1.jq/qq_map.js 放入项目文件夹jq（原生规范）或widget/lib（AMD规范）中
     2.demo中的demo.html为功能展现最全面的页面；demo_requireJs.html是amd规范的测试
     
 ## 页面引用
---
+
 
 原生引用
 
@@ -26,7 +26,7 @@ requireJs引用
     3. 依赖qq_map.js和 zepto.min.js，成功后返回对象baidu_map
     
 ## 功能配置及启用方法
---
+
 
 调用方法
 
